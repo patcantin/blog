@@ -1,4 +1,7 @@
 <p id="notice"><%= notice %></p>
+<% @article.photos.each do |photo| %>
+<%= cl_image_tag photo.key, class: "show_img" %>
+<% end %>
 
 <p>
   <strong>Title:</strong>
